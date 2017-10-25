@@ -12,14 +12,14 @@ import reducers from './reducers';
 
 //import styles
 import './styles/index.css';
-import 'bootstrap/dist/css/bootstrap.css';
+// import 'bootstrap/dist/css/bootstrap.css';
 
 //component imports
 import App from './components/App';
 //BaseLayout imported...Here
 import UserList from './containers/UserList';
 import UserDetail from './containers/UserDetail';
-import AccountDetail from './containers/AccountDetail';
+// import AccountDetail from './containers/AccountDetail';
 
 //create store for redux and apply middleware
 const createStoreWithMiddleware = applyMiddleware()(createStore);
@@ -31,7 +31,7 @@ ReactDOM.render(
       {/*Baselayout?*/}
       <Switch>
         <Route exact path="/" component={App} />
-        <Route path="/users/:id/:accountID" component={AccountDetail} />
+        {/* <Route path="/users/:id/:accountID" component={AccountDetail} /> */}
         <Route path="/users/:id" component={UserDetail} />
         <Route path="/users" component={UserList} />
       </Switch>

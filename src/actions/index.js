@@ -9,6 +9,13 @@ export function selectUser(userId) {
   };
 }
 
+export function selectAccount(accountId) {
+  return {
+    type: ACCOUNT_SELECTED,
+    payload: accountId
+  }
+}
+
 /************************************
 
 You will need to create a selectAccount

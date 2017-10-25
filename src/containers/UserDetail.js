@@ -62,7 +62,11 @@ function mapStateToProps(state) {
   };
 }
 
-
+function mapDispatchToProps(dispatch) {
+  return bindActionCreators({
+    selectAccount: selectAccount
+  }, dispatch)
+}
 /*
 
 You will need to create a mapDispatchToProps function here and
