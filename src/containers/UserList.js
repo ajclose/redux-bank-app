@@ -11,7 +11,7 @@ class UserList extends Component {
     render() {
         let users = this.props.users.map((user) => {
             return (
-                <li key={user._id} className="list-group-item" onClick={() => this.props.selectUser(user._id)}>
+                <li key={user._id} className="list-group-item" onClick={() => this.props.selectUser(user)}>
                   <Link to={`/users/${user._id}`}>{user.name}</Link>
                 </li>
             );

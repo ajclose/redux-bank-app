@@ -76,4 +76,4 @@ component.
 */
 
 
-export default connect(mapStateToProps,  mapDispatchToProps)(UserDetail);
+export default connect(mapStateToProps, mapDispatchToProps)(UserDetail);
